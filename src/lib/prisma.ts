@@ -1,5 +1,3 @@
-// Disable TypeScript to avoid troubles with `global.` and avoid vscode import troubles
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-nocheck
 
 import { PrismaClient } from '@prisma/client'
