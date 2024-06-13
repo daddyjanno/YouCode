@@ -6,12 +6,13 @@ import { Sun, Moon } from 'lucide-react'
 
 export function ThemeToggle() {
     const { theme, setTheme } = useTheme()
+    console.log(theme)
 
     return (
         <Button
             variant="ghost"
             size="icon"
-            onClick={() => setTheme(theme === 'light' ? 'dark' : 'ligth')}
+            onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
         >
             <Sun className="h-6 w-[1.3rem] dark:hidden"></Sun>
             <Moon className="hidden size-5 dark:block"></Moon>
