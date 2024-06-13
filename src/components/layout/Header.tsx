@@ -3,6 +3,7 @@ import { Typography } from '../ui/typography'
 import { SiteConfig } from '@/lib/site-config'
 import { ThemeToggle } from '../ThemeToggle'
 import Image from 'next/image'
+import { AuthButton } from '../../features/auth/AuthButton'
 
 export const Header = () => {
     return (
@@ -21,6 +22,7 @@ export const Header = () => {
                 </div>
                 <div className="flex flex-1 items-center justify-end space-x-4">
                     <nav className="flex items-center space-x-1">
+                        <AuthButton />
                         <ThemeToggle />
                     </nav>
                 </div>
