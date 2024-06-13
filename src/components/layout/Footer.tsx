@@ -1,7 +1,7 @@
-import Image from 'next/image'
-import { Typography } from '../ui/Typography'
-import Link from 'next/link'
 import { SiteConfig } from '@/lib/site-config'
+import Image from 'next/image'
+import Link from 'next/link'
+import { Typography } from '../ui/typography'
 
 export const Footer = () => {
     return (
@@ -10,10 +10,10 @@ export const Footer = () => {
                 <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between">
                     <div className="flex flex-row items-center gap-2">
                         <Image
-                            src="@/public/images/logo.svg"
+                            src="/images/logo.svg"
                             width={40}
                             height={30}
-                            alt="app-logo"
+                            alt="app logo"
                         />
                         <Typography variant="base" as={Link} href="/">
                             {SiteConfig.title}
@@ -33,14 +33,14 @@ export const Footer = () => {
                             Admin
                         </Link>
                     </div>
-                    <div className="flex w-full items-center justify-center">
-                        <Typography
-                            variant="base"
-                            className="text-xs text-muted-foreground"
-                        >
-                            &copy; {new Date().getFullYear()} YouCode
-                        </Typography>
-                    </div>
+                </div>
+                <div className="flex w-full items-center justify-center">
+                    <Typography
+                        variant="base"
+                        className="text-xs text-muted-foreground"
+                    >
+                        &copy; {new Date().getFullYear()} YouCode
+                    </Typography>
                 </div>
             </div>
         </footer>
