@@ -8,8 +8,8 @@ export type LoggedInButtonProps = {
 
 export const LoggedInButton = (props: LoggedInButtonProps) => {
     return (
-        <Button>
-            <Avatar>
+        <Button variant="outline" className="sm">
+            <Avatar className='size-6" mr-2'>
                 <AvatarFallback>{props.user?.name?.[0]}</AvatarFallback>
                 {props.user.image && (
                     <AvatarImage
@@ -18,6 +18,7 @@ export const LoggedInButton = (props: LoggedInButtonProps) => {
                     />
                 )}
             </Avatar>
+            {props.user.name}
         </Button>
     )
 }
